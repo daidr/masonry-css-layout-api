@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀑布流布局测试 Monsary Layout Test</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        瀑布流布局测试
+        <br>
+        Monsary Layout Test
+        <br>
+        <a target="_blank" href="https://github.com/daidr/masonry-css-layout-api">Github</a>
+    </div>
+
+    <div class="warn" style="padding:0 20px;display: none;">
+        <div style="color:#c40000;text-align: center;font-size: 30px;">你的浏览器不支持(或未开启)CSS Layout API实验性特性，参考 <a
+                target="_blank" href="https://github.com/daidr/masonry-css-layout-api">README</a> 打开浏览器的实验性特性来体验本demo
+        </div>
+        <div style="color:#c40000;text-align: center;font-size: 20px;">Your browser does not support (or has not
+            enabled) the CSS Layout API experimental feature<br>Please refer to the <a target="_blank"
+                href="https://github.com/daidr/masonry-css-layout-api">README</a> to open the experimental features of
+            the browser to experience this demo
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/600*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (1)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/550*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (2)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/300*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (3)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/500*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (4)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/600*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (5)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/400*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (6)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/600*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (7)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/650*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (8)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/550*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (9)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/300*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (10)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/500*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (11)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://api.daidr.me/apis/imgholder/700*300.webp" alt="Banner">
+            <div class="content">
+                <p class="title">It's a card. (12)</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+                <p class="desc">This is a verrrry long description.This is a verrrry long description.This is a verrrry
+                    long description.This is a verrrry long description.This is a verrrry long description.This is a
+                    verrrry long description.This is a verrrry long description.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Coded by <a href="https://daidr.me" target="_blank">戴兜</a>.
+    </footer>
+
+    <style>
+        .container {
+            width: 100%;
+            --masonry-column: 4;
+            --masonry-gap: 2%;
+            display: layout(masonry);
+
+            padding: 30px;
+        }
+
+        .card {
+            box-shadow: 0 0 32px 0 #00000023;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .content {
+            padding: .3rem 1.2rem;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: .8rem 0;
+        }
+
+        .desc {
+            text-indent: 2rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+    <script src="./masonry.js"></script>
+    <script>
+        if (!('layoutWorklet' in CSS)) {
+            document.querySelector(".warn").style.display = "block";
+            document.querySelector(".container").style.display = "none";
+        } else {
+            document.querySelector(".warn").style.display = "none";
+            document.querySelector(".container").style.display = null;
+        }
+    </script>
+
+</body>
+
+</html>
