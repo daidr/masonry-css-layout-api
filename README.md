@@ -1,5 +1,7 @@
 # CSS Layout API实现瀑布流
 
+[博客](https://daidr.me/?p=856) | [DEMO](https://masonry.daidr.me)
+
 ## 提示
 
 * 代码在 Edge 99.0.1134.0 测试可用
