@@ -34,7 +34,6 @@ registerLayout('masonry', class {
     async intrinsicSizes(children, edges, styleMap) { }
 
     async layout(children, edges, constraints, styleMap) {
-
         // 获取容器的可用宽度（水平尺寸 - 左右内边距之和）
         const availableInlineSize = constraints.fixedInlineSize - edges.inline;
 
@@ -46,17 +45,12 @@ registerLayout('masonry', class {
         // 将计算属性和百分比处理成像素值
         gap = calc(gap, availableInlineSize);
 
-
         // 计算子元素的宽度
         const childAvailableInlineSize = (availableInlineSize - ((column + 1) * gap)) / column;
 
-        // 设定子元素宽度
+        // 设定子元素宽度，获取fragments
         let childFragments = await Promise.all(children.map((child) => {
             return child.layoutNextFragment({ availableInlineSize: childAvailableInlineSize });
-        }));
-
-        childFragments = await Promise.all(children.map((child) => {
-            return child.layoutNextFragment({ availableInlineSize: childAvailableInlineSize, availableBlockSize: childFragments.blockSize });
         }));
 
         let autoBlockSize = 0; //初始化容器高度
