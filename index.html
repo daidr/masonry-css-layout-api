@@ -191,11 +191,37 @@
     <style>
         .container {
             width: 100%;
-            --masonry-column: 4;
+            --masonry-column: 5;
             --masonry-gap: 2%;
             display: layout(masonry);
             padding: 30px;
         }
+
+        @media (max-width: 1600px) {
+            .container {
+                --masonry-column: 4;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                --masonry-column: 3;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                --masonry-column: 2;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                --masonry-column: 1;
+            }
+        }
+
+        
 
         .card {
             box-shadow: 0 0 32px 0 #00000023;
