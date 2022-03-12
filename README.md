@@ -5,7 +5,7 @@
 ## 提示
 
 * 代码在 Edge 99.0.1134.0 测试可用
-* 你需要使用edge/chrome canary浏览器并在flags中将Experimental Web Platform features启用。
+* 你需要使用edge/chrome浏览器并在flags中将Experimental Web Platform features启用。
 
 ## 使用方法
 
